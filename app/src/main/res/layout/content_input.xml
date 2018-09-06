@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="30dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InputActivity"
+    tools:showIn="@layout/activity_input">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出社時間"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView1"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="--:--"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退社時間"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"/>
+
+    <Button
+        android:id="@+id/end_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:text="--:--"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_button"
+        android:layout_centerHorizontal="true"
+        android:text="決 定"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
